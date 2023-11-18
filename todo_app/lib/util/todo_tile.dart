@@ -20,7 +20,7 @@ function(bool?)? onChanged;
       child: Container(
         padding: const EdgeInsets.all(24),
         child: Row(children: [
-           Text(taskName, style: TextStyle(decoration: TextDecoration.lineThrough),),
+           Text(taskName, style: TextStyle(decoration:taskCompleted? TextDecoration.lineThrough:TextDecoration.none),),
            Checkbox(value: taskCompleted, onChanged: onChanged, activeColor: Colors.black, )
 
         ],

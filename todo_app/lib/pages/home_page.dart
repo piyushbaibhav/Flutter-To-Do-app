@@ -28,7 +28,12 @@ class _HomePageState extends State<HomePage> {
         //cente
         title: const Text('PIYUSH KA TUDU'),
         elevation: 0,
-      ),
+      ), 
+
+      floatingActionButton: FloatingActionButton(
+        onPressed: (){}
+        child: Icon(Icons.add),
+        ),
       body: ListView.builder(
         itemCount: toDoList.length,
         itemBuilder: (context, index) {

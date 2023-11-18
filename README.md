@@ -38,6 +38,7 @@ Contributions are welcome! If you find any issues or have suggestions, feel free
 
 Here are some screenshots and recording of the app in action (I've created a demo folder in util):
 ![](./todo_app/lib/util/demo/Screenshot%202023-11-19%20033332.png)
+[Watch the Demo Video](./todo_app/lib/util/demo/Screen%20Recording%20-%20Nov%2019,%202023.mp4)
 ![](./todo_app/lib/util/demo/Screen%20Recording%20-%20Nov%2019,%202023.mp4)
 
 

@@ -4,7 +4,7 @@ import 'package:todo_app/pages/home_page.dart';
 void main() {
   runApp(const MyApp());
 }
-
+hive.class
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 

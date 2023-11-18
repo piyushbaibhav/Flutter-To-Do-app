@@ -21,7 +21,7 @@ function(bool?)? onChanged;
         padding: const EdgeInsets.all(24),
         child: Row(children: [
            Text(taskName),
-           Checkbox(value: value, onChanged: onChanged)
+           Checkbox(value: taskCompleted, onChanged: onChanged)
 
         ],
         )   

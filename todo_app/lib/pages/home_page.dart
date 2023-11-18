@@ -9,6 +9,16 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  List toDoList = [
+    ["make tutorial", false],
+    ["do laundry", true],
+  ];
+  void checkBoxChanged(bool? value, int index) {
+    setState(() {
+      toDoList[index][1] = !toDoList[index][1];
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -19,19 +29,16 @@ class _HomePageState extends State<HomePage> {
         title: const Text('PIYUSH KA TUDU'),
         elevation: 0,
       ),
-      body: ListView(
-        children: const [
-          ToDoTile(
-            taskName: "make tutorial",
-            taskCompleted: true,
-            onChanged: (p0){},
-          ),
-        ],
-
-
+      body: ListView.builder(
+        itemCount: toDoList.length,
+        itemBuilder: (context, index) {
+          return ToDoTile(
+            taskName: toDoList[index][0],
+            taskCompleted: toDoList[index][1],
+            onChanged: (value) => checkBoxChanged(value, index),
+          );
+        },
       ),
     );
   }
 }
-
-

@@ -20,7 +20,7 @@ function(bool?)? onChanged;
       child: Container(
         padding: const EdgeInsets.all(24),
         child: Row(children: [
-           Text(taskName, style: TextStyle(decoration:taskCompleted? TextDecoration.lineThrough:TextDecoration.none),),
+           Text(taskName, style: TextStyle(decoration:taskCompleted? TextDecoration.lineThrough:slideable),),
            Checkbox(value: taskCompleted, onChanged: onChanged, activeColor: Colors.black, )
 
         ],
@@ -33,4 +33,6 @@ function(bool?)? onChanged;
       )  
     );
   }
+
+  TextDecoration get slideable => TextDecoration.none;
 }

@@ -77,8 +77,16 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       backgroundColor: Colors.yellow[200],
       appBar: AppBar(
-        title: Text('TO DO'),
+        title: Text(
+          'PIYUSH KA TO DO',
+          style: TextStyle(
+            fontWeight: FontWeight.bold,
+            fontSize: 20,
+          ),
+        ),
+        centerTitle: true,
         elevation: 0,
+        backgroundColor: Colors.yellow,
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: createNewTask,
